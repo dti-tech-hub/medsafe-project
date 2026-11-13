@@ -183,8 +183,8 @@ MedSafe features strict, multi-tiered authorization:
 
 ## 🌐 Deployment
 
-### Backend on [Render](https://render.com)
-### Frontend on [Vercel](https://vercel.com)
+### Backend on [Render](https://medsafe-project-0mzy.onrender.com)
+### Frontend on [Vercel](https://medsafe-project.vercel.app/)
 
 ---
 
