@@ -1,6 +1,5 @@
 # MedSafe 💊
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-emerald.svg)](LICENSE)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-009688.svg?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
 [![React](https://img.shields.io/badge/React-19.0-61DAFB.svg?logo=react&logoColor=black)](https://react.dev)
 [![Vite](https://img.shields.io/badge/Vite-5.0+-646CFF.svg?logo=vite&logoColor=white)](https://vitejs.dev)
@@ -104,7 +103,7 @@ Ensure you have the following installed on your machine:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/medsafe.git
+git clone https://github.com/dti-tech-hub/medsafe-project.git
 cd medsafe
 ```
 
@@ -114,28 +113,20 @@ cd medsafe
 
 #### Root / Backend Configuration
 Create a `.env` file in the root directory:
-```bash
-cp .env.example .env
-```
 Populate `.env` with your InsForge credentials:
 ```env
 INSFORGE_BASE_URL=https://your-project.insforge.app
 INSFORGE_ANON_KEY=your_insforge_anon_key
 INSFORGE_API_KEY=your_insforge_api_key
-ADMIN_EMAIL=admin@medsafe.org
 ```
 
 #### Frontend Configuration
 Create a `frontend/.env` file:
-```bash
-cp frontend/.env.example frontend/.env
-```
 Populate `frontend/.env`:
 ```env
 VITE_API_BASE_URL=http://127.0.0.1:8000
 VITE_INSFORGE_URL=https://your-project.insforge.app
 VITE_INSFORGE_ANON_KEY=your_insforge_anon_key
-VITE_ADMIN_EMAIL=admin@medsafe.org
 ```
 
 ---
@@ -190,31 +181,10 @@ MedSafe features strict, multi-tiered authorization:
 
 ---
 
-## 🌐 Deployment Guide
+## 🌐 Deployment
 
 ### Backend on [Render](https://render.com)
-1. Create a **New Web Service** pointing to your repository.
-2. Set **Root Directory** to `backend`.
-3. Set **Runtime** to `Python 3`.
-4. Set **Build Command** to `pip install -r requirements.txt`.
-5. Set **Start Command** to `uvicorn main:app --host 0.0.0.0 --port $PORT`.
-6. Add the environment variables:
-   - `INSFORGE_BASE_URL`
-   - `INSFORGE_ANON_KEY`
-   - `INSFORGE_API_KEY`
-   - `ADMIN_EMAIL`
-7. Copy the assigned Render URL (e.g. `https://medsafe-backend.onrender.com`).
-
 ### Frontend on [Vercel](https://vercel.com)
-1. Import your GitHub repository in Vercel.
-2. Set **Root Directory** to `frontend`.
-3. Select Framework Preset **Vite**.
-4. Under **Environment Variables**, set:
-   - `VITE_API_BASE_URL` = `https://medsafe-backend.onrender.com` *(your live Render backend URL)*
-   - `VITE_INSFORGE_URL` = `https://your-project.insforge.app`
-   - `VITE_INSFORGE_ANON_KEY` = `your_insforge_anon_key`
-   - `VITE_ADMIN_EMAIL` = `admin@medsafe.org`
-5. Click **Deploy**. SPA rewrites are pre-configured in `frontend/vercel.json`.
 
 ---
 
@@ -224,6 +194,3 @@ MedSafe features strict, multi-tiered authorization:
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
