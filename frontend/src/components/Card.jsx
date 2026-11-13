@@ -1,0 +1,15 @@
+export function Card({
+  as: Component = 'div',
+  className = '',
+  children,
+  ...props
+}) {
+  return (
+    <Component
+      className={`card${className ? ` ${className}` : ''}`}
+      {...props}
+    >
+      {children}
+    </Component>
+  )
+}

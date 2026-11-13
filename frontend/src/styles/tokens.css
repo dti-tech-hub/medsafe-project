@@ -1,0 +1,89 @@
+:root {
+  --font-sans:
+    Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial,
+    sans-serif;
+
+  --color-canvas: #f6faf8;
+  --color-surface: #ffffff;
+  --color-surface-subtle: #f0fdf4;
+  --color-surface-tint: #ecfdf5;
+  --color-surface-muted: #e6f4ea;
+
+  --color-text: #132a22;
+  --color-text-strong: #062b1f;
+  --color-text-muted: #4b6358;
+  --color-text-subtle: #5f7a6f;
+  --color-text-on-accent: #ffffff;
+
+  --color-border: #d1e3da;
+  --color-border-strong: #a7cbba;
+
+  /* Vibrant medical green shades */
+  --color-accent: #059669;
+  --color-accent-strong: #046c4e;
+  --color-accent-soft: #ecfdf5;
+  --color-accent-tint: #d1fae5;
+  --color-accent-border: #6ee7b7;
+  --color-focus: #059669;
+
+  --color-danger: #991b1b;
+  --color-danger-bg: #fef2f2;
+  --color-danger-border: #fecaca;
+
+  --color-warning: #854d0e;
+  --color-warning-bg: #fefce8;
+  --color-warning-border: #fef08a;
+
+  --color-info: #0e7490;
+  --color-info-bg: #ecfeff;
+  --color-info-border: #a5f3fc;
+
+  --color-neutral: #374151;
+  --color-neutral-bg: #f3f4f6;
+  --color-neutral-border: #e5e7eb;
+
+  --color-success: #059669;
+  --color-success-bg: #ecfdf5;
+  --color-success-border: #a7f3d0;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 8px;
+  --radius-round: 999px;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-hero: clamp(2rem, 4.2vw, 2.75rem);
+
+  --leading-tight: 1.2;
+  --leading-snug: 1.35;
+  --leading-normal: 1.6;
+  --leading-relaxed: 1.7;
+
+  --container: 1200px;
+  --header-height: 68px;
+
+  --shadow-xs: 0 1px 2px rgba(19, 41, 44, 0.06);
+  --shadow-sm: 0 2px 6px rgba(19, 41, 44, 0.06);
+
+  --transition: 150ms ease;
+}
